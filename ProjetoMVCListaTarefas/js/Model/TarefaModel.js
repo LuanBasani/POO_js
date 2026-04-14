@@ -12,7 +12,7 @@ export class TarefaModel {
 
     // métodos
     // add tarefa
-    addTarefas(titulo){
+    addTarefa(titulo){
         const newTarefa = {
             id: this.currentId++, // atribui o id atual
             titulo: titulo, // atribui o título da tarefa
@@ -35,7 +35,7 @@ export class TarefaModel {
     }
 
     // remover a tarefa do vetor (delete)
-    removeTarefa(id){
+    removerTarefa(id){
         this.tarefas = this.tarefas.filter(tarefa => tarefa.id !== id)
     }
 }
